@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+
+    <style>
+        .navbar {
+            position: relative;
+            border: none;
+            margin-bottom: 0;
+        }
+
+        .nav-contain {
+            background: rgb(10, 0, 24);
+        }
+
+        .navbar {
+            background: transparent;
+            border-color: transparent;
+        }
+
+        @media (min-width: 768px) {
+            .navbar {
+                position: fixed;
+                top: 15px;
+            }
+
+            .nav-contain {
+                max-width: 700px;
+                padding: 10px 15px;
+            }
+        }
+
+        .navbar-inverse .navbar-nav>li>a:focus,
+        .navbar-inverse .navbar-nav>li>a:hover {
+            color: #fd435b;
+            background-color: transparent;
+        }
+
+        .search-contain span {
+            font-size: 24px;
+            letter-spacing: 2px;
+        }
+
+        #cool-panel {
+            padding: 15px;
+            background: #13032b;
+        }
+
+        .review-cards {
+            height: 200px;
+        }
+
+        .review-cards .rating {
+            bottom: 25px;
+            position: absolute;
+            right: 25px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container nav-contain">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">LOGO</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="#search-panel">Travel</a></li>
+                    <li><a href="#cool-panel">Explore</a></li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <img class="img-responsive" src="banner2.jpg" />
+    <hr />
+    <div id="search-panel" class="container search-contain text-center">
+        <header>
+            <span>Find the Adventure</span>
+        </header>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="form-inline">
+                    <input type="number" class="form-control" name='NumberOfPerson' placeholder="Number of Person" />
+                    <input type="date" class="form-control" name="StartDate" placeholder="Start Date" />
+                    <input type="date" class="form-control" name="EndDate" placeholder="End Date" />
+                    <input type="text" class="form-control" name="Place" placeholder="Place" />
+                    <button class="btn btn-primary">Search</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr />
+    <div id="cool-panel">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-4">
+                    <div class="panel panel-default review-cards">
+                        <div class="panel-body">
+                            Some Cool Title
+                            <div class="rating">
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star-empty"></span>
+                                <span class="glyphicon glyphicon-star-empty"></span>
+                                <span class="glyphicon glyphicon-star-empty"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-4">
+                    <div class="panel panel-default review-cards">
+                        <div class="panel-body">
+                            Some Cool Title
+                            <div class="rating">
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star-empty"></span>
+                                <span class="glyphicon glyphicon-star-empty"></span>
+                                <span class="glyphicon glyphicon-star-empty"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-4">
+                    <div class="panel panel-default review-cards">
+                        <div class="panel-body">
+                            Some Cool Title
+                            <div class="rating">
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star-empty"></span>
+                                <span class="glyphicon glyphicon-star-empty"></span>
+                                <span class="glyphicon glyphicon-star-empty"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-4">
+                    <div class="panel panel-default review-cards">
+                        <div class="panel-body">
+                            Some Cool Title
+                            <div class="rating">
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star-empty"></span>
+                                <span class="glyphicon glyphicon-star-empty"></span>
+                                <span class="glyphicon glyphicon-star-empty"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-4">
+                    <div class="panel panel-default review-cards">
+                        <div class="panel-body">
+                            Some Cool Title
+                            <div class="rating">
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star-empty"></span>
+                                <span class="glyphicon glyphicon-star-empty"></span>
+                                <span class="glyphicon glyphicon-star-empty"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-4">
+                    <div class="panel panel-default review-cards">
+                        <div class="panel-body">
+                            Some Cool Title
+                            <div class="rating">
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star-empty"></span>
+                                <span class="glyphicon glyphicon-star-empty"></span>
+                                <span class="glyphicon glyphicon-star-empty"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-4">
+                    <div class="panel panel-default review-cards">
+                        <div class="panel-body">
+                            Some Cool Title
+                            <div class="rating">
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star-empty"></span>
+                                <span class="glyphicon glyphicon-star-empty"></span>
+                                <span class="glyphicon glyphicon-star-empty"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-4">
+                    <div class="panel panel-default review-cards">
+                        <div class="panel-body">
+                            Some Cool Title
+                            <div class="rating">
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star-empty"></span>
+                                <span class="glyphicon glyphicon-star-empty"></span>
+                                <span class="glyphicon glyphicon-star-empty"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr />
+
+
+
+</body>
+
+</html>
